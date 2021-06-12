@@ -21,6 +21,8 @@ variable "db_write_capacity" {
 */
   variable "service_key" {
   type    = string
-  //default = "us-west-1"
+}
+  variable "project_id" {
+  type    = string
 }
 
