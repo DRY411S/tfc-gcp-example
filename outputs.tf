@@ -10,3 +10,7 @@ output "default_deleted" {
   value       = google_compute_network.vpc_network.delete_default_routes_on_create
   description = "Are the default routes deleted?"
 }
+output "gateway_ip" {
+  value       = google_compute_network.vpc_network.gateway_ipv4
+  description = "VPC Gateway IP"
+}
