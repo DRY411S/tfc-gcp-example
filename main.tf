@@ -24,7 +24,7 @@ resource "aws_dynamodb_table" "tfc_example_table" {
 provider "google" {
   credentials = var.service_key
 
-  project = var.service_key.project_id
+  project = var.project_id
   region  = "us-central1"
   zone    = "us-central1-c"
 }
