@@ -1,4 +1,4 @@
-output "network_id" {
-  value       = vpc_network.id
-  description = "ID of the VPC being created"
+output "vpc_id" {
+  description = "ID of project VPC"
+  value       = vpc.vpc_id
 }
