@@ -31,9 +31,9 @@ terraform {
 }
 
 provider "google" {
-  credentials = file("<NAME>.json")
+  credentials = var.service_key
 
-  project = "<PROJECT_ID>"
+  project = var.project_id
   region  = "us-central1"
   zone    = "us-central1-c"
 }
