@@ -3,6 +3,6 @@ output "vpc_id" {
   value       = google_compute_network.vpc_network.id
 }
 output "vpc" {
-  value       = google_compute_network.vpc_network.vpc
+  value       = google_compute_network.vpc
   description = "The network info"
 }
