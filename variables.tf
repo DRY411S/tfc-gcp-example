@@ -1,4 +1,5 @@
-variable "aws_region" {
+/*
+  variable "aws_region" {
   type    = string
   default = "us-west-1"
 }
@@ -17,3 +18,9 @@ variable "db_write_capacity" {
   type    = number
   default = 1
 }
+*/
+  variable "service_key" {
+  type    = string
+  //default = "us-west-1"
+}
+
