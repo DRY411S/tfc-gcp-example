@@ -1,4 +1,5 @@
-provider "aws" {
+/*
+  provider "aws" {
   region = var.aws_region
 }
 
@@ -17,4 +18,26 @@ resource "aws_dynamodb_table" "tfc_example_table" {
     name = "UUID"
     type = "S"
   }
+}
+*/
+  
+terraform {
+  required_providers {
+    google = {
+      source = "hashicorp/google"
+      version = "3.5.0"
+    }
+  }
+}
+
+provider "google" {
+  credentials = file("<NAME>.json")
+
+  project = "<PROJECT_ID>"
+  region  = "us-central1"
+  zone    = "us-central1-c"
+}
+
+resource "google_compute_network" "vpc_network" {
+  name = "terraform-network"
 }
