@@ -1,4 +1,4 @@
 output "vpc_id" {
   description = "ID of project VPC"
-  value       = vpc_network.vpc_id
+  value       = module.vpc_network.vpc_id
 }
