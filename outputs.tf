@@ -4,5 +4,5 @@ output "vpc_id" {
 }
 output "vpc_config" {
   description = "The routing configuration"
-  value = google_compute_network.vpc_network.routingConfig
+  value       = google_compute_network.vpc_network.routingConfig
 }
