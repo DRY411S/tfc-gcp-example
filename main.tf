@@ -33,7 +33,7 @@ terraform {
 provider "google" {
   credentials = var.service_key
 
-  project = var.project_id
+  // project = var.project_id
   region  = "us-central1"
   zone    = "us-central1-c"
 }
