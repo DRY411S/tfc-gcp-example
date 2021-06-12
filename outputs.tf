@@ -1,4 +1,4 @@
-output "network_name" {
-  value       = vpc_network.network_name
+output "network_id" {
+  value       = vpc_network.id
   description = "The name of the VPC being created"
 }
