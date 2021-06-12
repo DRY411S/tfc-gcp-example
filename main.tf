@@ -21,15 +21,6 @@ resource "aws_dynamodb_table" "tfc_example_table" {
 }
 */
   
-terraform {
-  required_providers {
-    google = {
-      source = "hashicorp/google"
-      version = "3.71.0"
-    }
-  }
-}
-
 provider "google" {
   credentials = var.service_key
 
