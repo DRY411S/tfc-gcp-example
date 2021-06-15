@@ -14,9 +14,9 @@ resource "google_compute_instance" "vm_instance" {
   name         = "terraform-instance"
   machine_type = "f1-micro"
   tags         = ["web", "dev"]
-  /*labels {
-    manual_label = true
-  }*/
+  labels = {
+    manual_label = "true"
+    }
 
   boot_disk {
     initialize_params {
